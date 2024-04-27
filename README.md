@@ -4,7 +4,7 @@ This is a Laravel application for sharing encrypted messages securely with colle
 
 ## Live Demo
 
-[Live Demo](https://encrypted.kashifali.me/)
+[Live Demo](https://messages.kashifali.me/)
 
 ## Developer
 
