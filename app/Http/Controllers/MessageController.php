@@ -29,5 +29,18 @@ class MessageController extends Controller
 
         return back()->with('status', 'Message was encrypted successfully!');
     }
+    public function show($id)
+    {
+        $message = Message::find($id);
+
+        // Check if the message exists
+        if (!$message)
+            abort(404, 'Message not found');
+
+        $decryptedMessage = $this->messageService->decryptText($message->text);
+
+        return view('messages.show', compact("decryptedMessage"));
+    }
+
 
 }

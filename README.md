@@ -45,7 +45,6 @@ To get a local copy up and running follow these simple steps.
    ```sh
    php artisan migrate
 
-
 ### Usage
 
 1. Start the development server
@@ -54,3 +53,9 @@ To get a local copy up and running follow these simple steps.
 2. Access the application in your web browser
    ```sh
    http://localhost:8000
+
+### Perform Tests
+
+1. Start the development server
+   ```sh
+   php artisan test tests/Unit/MessageTest.php

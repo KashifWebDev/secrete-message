@@ -11,6 +11,7 @@ Route::get('/', function () {
 
 Route::get('/messages/create', [MessageController::class, 'create'])->name('messages.create');
 Route::post('/messages', [MessageController::class, 'store'])->name('messages.store');
+
 Route::get('/messages/{messageId}', [MessageController::class, 'show'])->name('messages.show');
 
 Route::get('decrypt-message', [DecryptionController::class, 'showForm'])->name('decrypt.message');
